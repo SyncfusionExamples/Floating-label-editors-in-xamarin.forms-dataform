@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+<ItemGroup>
+<PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+</ItemGroup>
+
+<ItemGroup>
+  <Reference Include="Syncfusion.Buttons.XForms">
+    <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\pcl\Syncfusion.Buttons.XForms.dll</HintPath>
+  </Reference>
+  <Reference Include="Syncfusion.Core.XForms">
+    <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\pcl\Syncfusion.Core.XForms.dll</HintPath>
+  </Reference>
+  <Reference Include="Syncfusion.Licensing">
+    <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\pcl\Syncfusion.Licensing.dll</HintPath>
+  </Reference>
+  <Reference Include="Syncfusion.SfComboBox.XForms">
+    <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\pcl\Syncfusion.SfComboBox.XForms.dll</HintPath>
+  </Reference>
+  <Reference Include="Syncfusion.SfDataForm.XForms">
+    <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\pcl\Syncfusion.SfDataForm.XForms.dll</HintPath>
+  </Reference>
+  <Reference Include="Syncfusion.SfMaskedEdit.XForms">
+    <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\pcl\Syncfusion.SfMaskedEdit.XForms.dll</HintPath>
+  </Reference>
+  <Reference Include="Syncfusion.SfNumericTextBox.XForms">
+    <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\pcl\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
+  </Reference>
+  <Reference Include="Syncfusion.SfNumericUpDown.XForms">
+    <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\pcl\Syncfusion.SfNumericUpDown.XForms.dll</HintPath>
+  </Reference>
+</ItemGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
+      <DependentUpon>*.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
