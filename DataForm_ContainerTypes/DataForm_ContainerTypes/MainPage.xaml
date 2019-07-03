@@ -17,7 +17,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <dataform:SfDataForm x:Name="dataForm" Grid.Row="0" DataObject="{Binding EmployeeForm}" LayoutOptions="TextInputLayout"/>
+            <dataform:SfDataForm x:Name="dataForm" Grid.Row="0" DataObject="{Binding ContactsInfo}" LayoutOptions="TextInputLayout"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

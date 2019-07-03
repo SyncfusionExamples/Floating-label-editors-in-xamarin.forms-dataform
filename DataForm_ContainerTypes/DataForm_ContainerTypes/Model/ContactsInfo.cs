@@ -6,61 +6,61 @@ using System.Text;
 
 namespace DataForm_ContainerTypes
 {
-    public class EmployeeForm : INotifyPropertyChanged
+    public class ContactsInfo : INotifyPropertyChanged
     {
         #region Fields       
         /// <summary>
-        /// Represents the name of the employee information.
+        /// Represents the name of the person information.
         /// </summary>
         private string name = "John";
 
         /// <summary>
-        /// Represents the last name of the employee information.
+        /// Represents the last name of the person information.
         /// </summary>
         private string lastname;
 
         /// <summary>
-        /// Represents the phone number of the employee information.
+        /// Represents the phone number of the person information.
         /// </summary>
         private string phonenumber;
 
         /// <summary>
-        /// Represents the country of the employee information.
+        /// Represents the country of the person information.
         /// </summary>
         private string country;
 
         /// <summary>
-        /// Represents the address of the employee information.
+        /// Represents the address of the person information.
         /// </summary>
         private string address;
 
         /// <summary>
-        /// Represents the city of the employee information.
+        /// Represents the city of the person information.
         /// </summary>
         private string city;
 
         /// <summary>
-        /// Represents the first zip of the employee information.
+        /// Represents the first zip of the person information.
         /// </summary>
         private string zip1;
 
         /// <summary>
-        /// Represents the team of the employee information.
+        /// Represents the team of the person information.
         /// </summary>
         private string team;
 
         /// <summary>
-        /// Represents the track hours of the employee information.
+        /// Represents the track hours of the person information.
         /// </summary>
         private bool trackhours;
 
         /// <summary>
-        /// Represents the type here of the employee information.
+        /// Represents the type here of the person information.
         /// </summary>
         private string typehere;
         #endregion
 
-        public EmployeeForm()
+        public ContactsInfo()
         {
 
         }
