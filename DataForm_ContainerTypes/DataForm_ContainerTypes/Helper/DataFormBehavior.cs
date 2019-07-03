@@ -55,12 +55,6 @@ namespace DataForm_ContainerTypes
                         ReserveSpaceForAssistiveLabels = true
                     };
                 }
-                else if (e.DataFormItem.Name.Equals("Password"))
-                {
-                    e.DataFormItem.ShowCharCount = true;
-                    (e.DataFormItem as DataFormTextItem).EnablePasswordVisibilityToggle = true;
-                
-                }
                 else if (e.DataFormItem.Name.Equals("Address"))
                 {
                     e.DataFormItem.TextInputLayoutSettings = new Syncfusion.SfDataForm.XForms.TextInputLayoutSettings()
