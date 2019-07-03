@@ -27,7 +27,7 @@ namespace DataForm_ContainerTypes
         /// <summary>
         /// Represents the country of the employee information.
         /// </summary>
-        private string country;
+        private string password;
 
         /// <summary>
         /// Represents the address of the employee information.
@@ -131,16 +131,16 @@ namespace DataForm_ContainerTypes
         [Display(ShortName = "Password", Prompt = "Enter your password")]
         [StringLength(10, ErrorMessage = "Password should not exceed 10 characters")]
         [DataType(DataType.Password)]
-        public string Country
+        public string Password
         {
             get
             {
-                return this.country;
+                return this.password;
             }
             set
             {
-                this.country = value;
-                this.RaisePropertyChanged("Country");
+                this.password = value;
+                this.RaisePropertyChanged("Password");
             }
         }
 

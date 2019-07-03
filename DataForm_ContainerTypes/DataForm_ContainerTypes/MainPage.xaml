@@ -8,6 +8,10 @@
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
+
+    <ContentPage.Behaviors>
+        <local:DataFormBehavior/>
+    </ContentPage.Behaviors>
     <ContentPage.Content>
         <Grid >
             <Grid.RowDefinitions>
