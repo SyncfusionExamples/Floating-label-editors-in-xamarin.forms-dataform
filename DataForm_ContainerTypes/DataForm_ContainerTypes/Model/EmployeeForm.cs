@@ -128,9 +128,7 @@ namespace DataForm_ContainerTypes
         /// <summary>
         /// Gets or sets the country field.
         /// </summary>
-        [Display(ShortName = "Password", Prompt = "Enter your password")]
-        [StringLength(10, ErrorMessage = "Password should not exceed 10 characters")]
-        [DataType(DataType.Password)]
+        [Display(ShortName = "Country", Prompt = "Enter your country")]
         public string Country
         {
             get
