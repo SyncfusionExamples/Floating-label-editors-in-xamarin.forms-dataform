@@ -39,25 +39,6 @@ namespace DataForm_ContainerTypes
         /// </summary>
         private string city;
 
-        /// <summary>
-        /// Represents the first zip of the person information.
-        /// </summary>
-        private string zip1;
-
-        /// <summary>
-        /// Represents the team of the person information.
-        /// </summary>
-        private string team;
-
-        /// <summary>
-        /// Represents the track hours of the person information.
-        /// </summary>
-        private bool trackhours;
-
-        /// <summary>
-        /// Represents the type here of the person information.
-        /// </summary>
-        private string typehere;
         #endregion
 
         public ContactsInfo()
