@@ -9,15 +9,15 @@ namespace DataForm_ContainerTypes
     /// </summary>
     public class ViewModel
     {
-        private EmployeeForm employeeForm;
-        public EmployeeForm EmployeeForm
+        private ContactsInfo contactform;
+        public ContactsInfo ContactForm
         {
-            get { return this.employeeForm; }
-            set { this.employeeForm = value; }
+            get { return this.contactform; }
+            set { this.contactform = value; }
         }
         public ViewModel()
         {
-            this.employeeForm = new EmployeeForm();
+            this.contactform = new ContactsInfo();
         }
     }
 }
