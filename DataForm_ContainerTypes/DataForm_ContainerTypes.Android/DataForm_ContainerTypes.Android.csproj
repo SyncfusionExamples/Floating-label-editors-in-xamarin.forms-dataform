@@ -46,57 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
-    <Reference Include="Syncfusion.Buttons.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.Buttons.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Buttons.XForms.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.Buttons.XForms.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Core.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.Core.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Core.XForms.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.Core.XForms.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Licensing">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfComboBox.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfComboBox.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfComboBox.XForms.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfComboBox.XForms.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfDataForm.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfDataForm.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfDataForm.XForms.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfDataForm.XForms.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfMaskedEdit.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfMaskedEdit.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfMaskedEdit.XForms.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfMaskedEdit.XForms.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfNumericTextBox.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.XForms.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfNumericTextBox.XForms.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericUpDown.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfNumericUpDown.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericUpDown.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfNumericUpDown.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericUpDown.XForms.Android">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\android\Syncfusion.SfNumericUpDown.XForms.Android.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -121,7 +70,15 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataForm">
+      <Version>18.4.0.39</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.3" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />

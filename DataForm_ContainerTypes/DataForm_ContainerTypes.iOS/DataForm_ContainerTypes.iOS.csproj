@@ -113,64 +113,16 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Syncfusion.Buttons.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.Buttons.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Buttons.XForms.iOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.Buttons.XForms.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Core.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.Core.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Core.XForms.iOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.Core.XForms.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Licensing">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfComboBox.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfComboBox.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfComboBox.XForms.iOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfComboBox.XForms.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfDataForm.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfDataForm.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfDataForm.XForms.iOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfDataForm.XForms.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfMaskedEdit.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfMaskedEdit.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfMaskedEdit.XForms.iOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfMaskedEdit.XForms.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.iOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfNumericTextBox.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfNumericTextBox.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericTextBox.XForms.IOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfNumericTextBox.XForms.IOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericUpDown.iOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfNumericUpDown.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericUpDown.XForms">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfNumericUpDown.XForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SfNumericUpDown.XForms.IOS">
-      <HintPath>C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\17.2.0.28\Xamarin\lib\ios-unified\Syncfusion.SfNumericUpDown.XForms.IOS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataForm">
+      <Version>18.4.0.39</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
