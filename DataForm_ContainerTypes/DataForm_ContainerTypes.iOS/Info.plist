@@ -50,5 +50,9 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>DataForm_ContainerTypes</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ContactsIcons.ttf</string>
+	</array>
 </dict>
 </plist>

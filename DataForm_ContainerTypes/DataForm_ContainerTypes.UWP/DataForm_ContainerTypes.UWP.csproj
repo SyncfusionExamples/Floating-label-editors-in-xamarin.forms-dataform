@@ -102,6 +102,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="DataForm_ContainerTypes.UWP_TemporaryKey.pfx" />
+    <None Include="Assets\Fonts\ContactsIcons.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Properties\Default.rd.xml" />
@@ -156,9 +157,12 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.4" />
     <PackageReference Include="Syncfusion.Xamarin.SfDataForm">
-      <Version>18.4.0.39</Version>
+      <Version>19.1.0.69</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Fonts\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

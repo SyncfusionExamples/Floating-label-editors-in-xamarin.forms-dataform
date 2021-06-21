@@ -5,7 +5,7 @@
   </PropertyGroup>
 
  <ItemGroup>
-<PackageReference Include="Syncfusion.Xamarin.SfDataForm" Version="18.4.0.39" />
+<PackageReference Include="Syncfusion.Xamarin.SfDataForm" Version="19.1.0.69" />
 <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
 </ItemGroup>
 
