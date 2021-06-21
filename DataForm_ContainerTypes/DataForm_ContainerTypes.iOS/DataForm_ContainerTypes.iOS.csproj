@@ -111,6 +111,7 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\ContactsIcons.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -120,7 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Syncfusion.Xamarin.SfDataForm">
-      <Version>18.4.0.39</Version>
+      <Version>19.1.0.69</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.617" />
   </ItemGroup>

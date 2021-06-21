@@ -7,135 +7,203 @@ using System.Text;
 
 namespace DataForm_ContainerTypes
 {
-    public class ContactsInfo : INotifyPropertyChanged
+    public class ContactInfo : INotifyPropertyChanged
     {
-        #region Fields       
-        /// <summary>
-        /// Represents the name of the person information.
-        /// </summary>
-        private string name = "John";
+        #region Fields
 
         /// <summary>
-        /// Represents the last name of the person information.
+        /// Represents the contact name of the contact information.
+        /// </summary>
+        private string contactName;
+
+        /// <summary>
+        /// Represents the middle name of the contact information.
+        /// </summary>
+        private string middelName;
+
+        /// <summary>
+        /// Represents the last name of the contact information.
         /// </summary>
         private string lastname;
 
         /// <summary>
-        /// Represents the phone number of the person information.
+        /// Represents the contact number of the contact information.
         /// </summary>
-        private string phonenumber;
+        private string contactNo;
 
         /// <summary>
-        /// Represents the country of the person information.
+        /// Represents the email field of the contact information.
         /// </summary>
-        private string country;
+        private string email;
 
         /// <summary>
-        /// Represents the address of the person information.
+        /// Represents the adress of the contact information.
         /// </summary>
         private string address;
 
         /// <summary>
-        /// Represents the city of the person information.
+        /// Represents the notes of the contact information.
         /// </summary>
-        private string city;
+        private string notes;
+
+        /// <summary>
+        /// Represents the birth date of the contact information.
+        /// </summary>
+        private DateTime birthDate;
+
+        /// <summary>
+        /// Represents the group name of the contact information.
+        /// </summary>
+        private string groupName;
+
+        /// <summary>
+        /// Represents the save field of the contact information.
+        /// </summary>
+        private Save saveTo;
 
         #endregion
 
-        public ContactsInfo()
-        {
+        #region Constructor
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ContactInfo"/> class.
+        /// </summary>
+        public ContactInfo()
+        {
         }
 
         /// <summary>
-        /// Represents the method that will handle when a property is changed on a component.
+        /// Represents a method that will handle when a property is changed on a component.
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
 
-        #region Public Properties  
         /// <summary>
-        /// Gets or sets the name field.
+        /// Describes the possible types to save.
         /// </summary>
-        [Display(ShortName = "User name")]
-        [Required(AllowEmptyStrings = false, ErrorMessage = "Name should not be empty")]
-        public string Name
+        public enum Save
+        {
+            /// <summary>
+            /// Represents sim.
+            /// </summary>
+            Sim,
+
+            /// <summary>
+            /// Represents phone.
+            /// </summary>
+            Phone
+        }
+
+        #endregion
+
+        #region Public Properties
+
+        /// <summary>
+        /// Gets or sets the contact field in the contacts information.
+        /// </summary>
+        [DisplayOptions(ColumnSpan = 2)]
+        [Display(ShortName = "Contact name")]
+        public string ContactName
         {
             get
             {
-                return this.name;
+                return this.contactName;
             }
+
             set
             {
-                this.name = value;
-                this.RaisePropertyChanged("Name");
+                this.contactName = value;
+                this.RaisePropertyChanged("ContactName");
             }
         }
 
         /// <summary>
-        /// Gets or sets the last name field.
+        /// Gets or sets the last name in the contacts information.
         /// </summary>
-        [Display(ShortName = "Last Name", Prompt = "Enter your last name")]
+        [DisplayOptions(ColumnSpan = 2)]
+        [Display(ShortName = "Last name")]
         public string LastName
         {
             get
             {
                 return this.lastname;
             }
+
             set
             {
                 this.lastname = value;
                 this.RaisePropertyChanged("LastName");
-
             }
         }
 
         /// <summary>
-        /// Gets or sets the phone number field.
+        /// Gets or sets the contact number field in the contacts information.
         /// </summary>
-        [Display(ShortName = "Phone number", Prompt = "Enter your phone number")]
+        [Display(ShortName = "Contact number")]
+        [DisplayOptions(ColumnSpan = 2)]
         [DataType(DataType.PhoneNumber)]
-        public string PhoneNumber
+        [StringLength(10, ErrorMessage = "Phone number should not exceed 10 digits.")]
+        public string ContactNumber
         {
             get
             {
-                return this.phonenumber;
+                return this.contactNo;
             }
+
             set
             {
-                this.phonenumber = value;
-                this.RaisePropertyChanged("PhoneNumber");
+                this.contactNo = value;
+                this.RaisePropertyChanged("ContactNumber");
             }
         }
 
         /// <summary>
-        /// Gets or sets the country field.
+        /// Gets or sets the email field in the contacts information.
         /// </summary>
-        [Display(ShortName = "Country", Prompt = "Enter your country")]
-        public string Country
+        [DisplayOptions(ColumnSpan = 2)]
+        public string Email
         {
             get
             {
-                return this.country;
+                return this.email;
             }
+
             set
             {
-                this.country = value;
-                this.RaisePropertyChanged("Country");
+                this.email = value;
+                this.RaisePropertyChanged("Email");
             }
         }
 
         /// <summary>
-        /// Gets or sets the address field.
+        /// Gets or sets the birth date field in the contacts information.
         /// </summary>
-        [DataType(DataType.MultilineText)]
-        [Display(Prompt = "Enter your address")]
+        [Display(ShortName = "Birth date")]
+        [DisplayOptions(ColumnSpan = 4)]
+        public DateTime BirthDate
+        {
+            get
+            {
+                return this.birthDate;
+            }
 
+            set
+            {
+                this.birthDate = value;
+                this.RaisePropertyChanged("BirthDate");
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the address field in the contacts information.
+        /// </summary>
+        [DisplayOptions(ColumnSpan = 4)]
         public string Address
         {
             get
             {
                 return this.address;
             }
+
             set
             {
                 this.address = value;
@@ -144,26 +212,78 @@ namespace DataForm_ContainerTypes
         }
 
         /// <summary>
-        /// Gets or sets the city field.
+        /// Gets or sets the notes field in the contacts information.
         /// </summary>
-        public string City
+        [DataType(DataType.MultilineText)]
+        [DisplayOptions(ColumnSpan = 4)]
+        public string Notes
         {
             get
             {
-                return this.city;
+                return this.notes;
             }
+
             set
             {
-                this.city = value;
-                this.RaisePropertyChanged("City");
+                this.notes = value;
+                this.RaisePropertyChanged("Notes");
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the group name field in the contacts information.
+        /// </summary>
+        [Display(ShortName = "Group name")]
+        [DisplayOptions(ColumnSpan = 4)]
+        public string GroupName
+        {
+            get
+            {
+                return this.groupName;
+            }
+
+            set
+            {
+                this.groupName = value;
+                this.RaisePropertyChanged("GroupName");
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the save field in the contacts information.
+        /// </summary>
+        [Display(ShortName = "Save To")]
+        [DisplayOptions(ColumnSpan = 5)]
+        public Save SaveTo
+        {
+            get
+            {
+                return this.saveTo;
+            }
+
+            set
+            {
+                this.saveTo = value;
+                this.RaisePropertyChanged("SaveTo");
+            }
+        }
+
+        #endregion
+
+        #region INotifyPropertyChanged implementation
+
+        /// <summary>
+        /// Occurs when propery value is changed.
+        /// </summary>
+        /// <param name="name">Property name</param>
+        private void RaisePropertyChanged(string name)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
         #endregion
-        private void RaisePropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
     }
 }
 

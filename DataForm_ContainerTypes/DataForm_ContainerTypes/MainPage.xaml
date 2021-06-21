@@ -5,19 +5,25 @@
              xmlns:dataform="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
 			x:Class="DataForm_ContainerTypes.MainPage">
 
-    <ContentPage.BindingContext>
-        <local:ViewModel/>
+     <ContentPage.BindingContext>
+        <local:ContactListViewModel/>
     </ContentPage.BindingContext>
 
     <ContentPage.Behaviors>
         <local:DataFormBehavior/>
     </ContentPage.Behaviors>
     <ContentPage.Content>
-        <Grid >
+        <Grid Padding="0,20,0,0" >
             <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <dataform:SfDataForm x:Name="dataForm" Grid.Row="0" DataObject="{Binding ContactForm}" LayoutOptions="TextInputLayout"/>
+            <Label Grid.Row="0" Text="ContactInfo" FontSize="15" Padding="10,0,0,0" FontAttributes="Bold"/>
+            <dataform:SfDataForm x:Name="dataForm"
+                                 Grid.Row="1"
+                                 LayoutOptions="TextInputLayout"
+                                 ColumnCount="4"
+                                 DataObject="{Binding ContactInfo}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>
